@@ -48,12 +48,12 @@ This project focuses on classifying SMS messages as spam or not spam using machi
 ## How to Run
 1. Clone the repository:
    ```sh
-   git clone <repository_url>
-   cd <repository_name>
+   git clone git@github.com:MoustafaMohamed01/SMS-Spam-Collection-Dataset.git
+   cd SMS-Spam-Collection-Dataset
    ```
 2. Install dependencies:
    ```sh
-   pip install -r requirements.txt
+   pip install numpy pandas seaborn matplotlib scikit-learn nltk streamlit xgboost wordcloud
    ```
 3. Run the Streamlit app:
    ```sh
