@@ -74,6 +74,11 @@ This project focuses on classifying SMS messages as spam or not spam using machi
 - **Heatmaps** to visualize feature correlations.
 - **Performance Metrics** such as accuracy, precision, recall, and F1-score across different models.
 
+## Streamlit Web App 🖥️
+Here’s a preview of the deployed web app:
+
+![Streamlit App Screenshot](streamlit_app_ui.png)
+
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
 
