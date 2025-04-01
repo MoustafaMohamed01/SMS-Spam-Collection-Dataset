@@ -26,9 +26,14 @@ This project focuses on classifying SMS messages as spam or not spam using machi
    - Handled missing values appropriately.
 
 2. **Exploratory Data Analysis (EDA)**:
-   - Visualized class distributions with pie charts.
-   - Generated word clouds for spam and non-spam messages.
-   - Analyzed message length distributions.
+   - **Spam vs Ham Distribution**
+     ![Spam vs Ham Distribution](images/spam_ham_distribution.png)
+   - **SMS Length Distribution**
+     ![SMS Length Distribution](images/sms_length_distribution.png)
+   - **SMS Word Count Distribution**
+     ![SMS Word Count Distribution](images/sms_word_count_distribution.png)
+   - **SMS Sentence Count Distribution**
+     ![SMS Sentence Count Distribution](images/sms_sentence_count_distribution.png)
 
 3. **Text Preprocessing**:
    - Converted text to lowercase and tokenized it.
@@ -45,6 +50,8 @@ This project focuses on classifying SMS messages as spam or not spam using machi
    - Compared performance using accuracy, precision, recall, and confusion matrices.
    - Implemented ensemble techniques (Voting Classifier, Stacking Classifier) for better performance.
 
+   ![Algorithm Performance](images/algorithm_performance.png)
+
 ## How to Run
 1. Clone the repository:
    ```sh
@@ -52,6 +59,13 @@ This project focuses on classifying SMS messages as spam or not spam using machi
    cd SMS-Spam-Collection-Dataset
    ```
 2. Install dependencies:
+
+   Ensure you have Python **3.7+** installed. Then, install the         required libraries:  
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Alternatively, install manually:  
    ```sh
    pip install numpy pandas seaborn matplotlib scikit-learn nltk streamlit xgboost wordcloud
    ```
@@ -68,11 +82,18 @@ This project focuses on classifying SMS messages as spam or not spam using machi
 - The dataset link: [https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset].
 
 ## Visualizations & Insights
-- **Word clouds** to understand frequent words in spam vs. non-spam messages.
-- **Bar charts & Histograms** to visualize message length distributions.
-- **Box plots** for detecting outliers.
-- **Heatmaps** to visualize feature correlations.
-- **Performance Metrics** such as accuracy, precision, recall, and F1-score across different models.
+- **Feature Pairplot by Target**
+  ![Feature Pairplot](images/feature_pairplot_by_target.png)
+- **Correlation Heatmap**
+  ![Correlation Heatmap](images/correlation_heatmap.png)
+- **Spam Word Cloud**
+  ![Spam Word Cloud](images/spam_word_cloud.png)
+- **Ham Word Cloud**
+  ![Ham Word Cloud](images/ham_word_cloud.png)
+- **Most Popular Words in Spam Corpus**
+  ![Spam Most Common Words](images/spam_most_common_words.png)
+- **Most Popular Words in Ham Corpus**
+  ![Ham Most Common Words](images/ham_most_common_words.png)
 
 ## Streamlit Web App 🖥️
 Here’s a preview of the deployed web app:
@@ -81,5 +102,3 @@ Here’s a preview of the deployed web app:
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
-
-
